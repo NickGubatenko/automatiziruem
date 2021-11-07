@@ -1,25 +1,34 @@
 /* заголовок 1 */
+
+body {
+	font-family: Arial, sans-serif;
+	margin-left: 200px;
+}
+
 h1 {
   color: green;
   text-align: left;
+  font-size: 50px;
 }
 
 /* заголовок 2 */
 h2 {
   color: red;
   text-align: left;
+  font-size: 30px;
 }
 
 /* заголовок 3 */
 h3 {
   color: blue;
   text-align: left;
+  font-size: 20px;
 }
 
 /* текст */
 p {
   font-family: verdana;
-  font-size: 20px;
+  font-size: 16px;
   
 }
 /*
