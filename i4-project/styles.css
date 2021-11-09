@@ -2,34 +2,60 @@
 
 body {
 	font-family: Arial, sans-serif;
-	margin-left: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	counter-reset: section1;
 }
 
-h1 {
-  color: black;
-  text-align: left;
-  font-size: 14pt;
+h1::before {
+	counter-increment: section1;
+	content: counter(section1) " ";
+}
+
+h2::before {
+	counter-increment: section2;
+	content: counter(section1) "." counter(section2) " ";
+}
+
+h3::before {
+	counter-increment: section3;
+	content: counter(section1) "." counter(section2) "." counter(section3) " ";
+}
+
+
+h1{
+	counter-reset: section2;
+	text-align: left;
+	font-size: 12pt;
 }
 
 /* заголовок 2 */
 h2 {
-  color: grey;
+  counter-reset: section3;
   text-align: left;
-  font-size: 12pt;
+  font-size: 10pt;
+  margin-bottom: 32px;
 }
 
 /* заголовок 3 */
 h3 {
-  color: dark-grey;
   text-align: left;
   font-size: 10pt;
 }
 
 /* текст */
-p {
+.pic {
   font-size: 10pt;
-  
+  text-align: center;
 }
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*
 #нумерованный список
 #список
