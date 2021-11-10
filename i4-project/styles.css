@@ -63,6 +63,12 @@ img {
   margin-right: auto;
 }
 
+ul.a {
+  list-style-position: outside;
+  list-style-type: '- ';
+}
+
+
 /*
 #нумерованный список
 #список
