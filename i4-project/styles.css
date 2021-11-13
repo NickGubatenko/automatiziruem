@@ -4,7 +4,7 @@ body {
 	font-family: Arial, sans-serif;
 	margin-left: auto;
 	margin-right: auto;
-	width: 80%;
+	width: 60%;
 	counter-reset: section1;
 }
 
@@ -27,21 +27,25 @@ h3::before {
 h1{
 	counter-reset: section2;
 	text-align: left;
-	font-size: 12pt;
+	font-size: 16pt;
 }
 
 /* заголовок 2 */
 h2 {
   counter-reset: section3;
   text-align: left;
-  font-size: 10pt;
+  font-size: 14pt;
   margin-bottom: 32px;
 }
 
 /* заголовок 3 */
 h3 {
   text-align: left;
-  font-size: 10pt;
+  font-size: 14pt;
+  font-weight: 400;
+  line-height: 1.1;
+  text-align: justify;
+
 }
 
 /* заголовок 6 */
@@ -53,7 +57,7 @@ h6 {
 
 /* текст */
 .pic {
-  font-size: 10pt;
+  font-size: 14pt;
   text-align: center;
 }
 
